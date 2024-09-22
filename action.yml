@@ -2,10 +2,10 @@ name: "Add Release Files"
 description: "Add release files to an existing github release"
 inputs:
   GITHUB_TOKEN: 
-    description: "The token to authenticate to github with. Use: ${{ secrets.GITHUB_TOKEN }}"
+    description: "The token to authenticate to github with. Use: secrets.GITHUB_TOKEN"
     required: true
   TAG_NAME:
-    description: "The tag of the release to add the files to. Use: ${{ github.event.release.tag_name }}"
+    description: "The tag of the release to add the files to. Use: github.event.release.tag_name"
     required: true
   FILES:
     description: "The files to add to the release"
